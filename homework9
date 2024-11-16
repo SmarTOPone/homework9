@@ -5,6 +5,5 @@ s = Soup(r.text, "html.parser")
 list = s.find_all(class_="ingredients-lst")
 for i in list:
   p = i.find_all("li")
-  if p:
-    for j in p:
-      print(j.text)
+  for j in p:
+    print(j.text)
